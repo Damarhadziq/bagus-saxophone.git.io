@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Kursus Saxophone</title>
+    <link rel="stylesheet" href="assets/pendaftaran.css">
+</head>
+<body>
+    <div class="container">
+        <header class="form-header">
+            <h1>Pendaftaran Kursus Saxophone</h1>
+            <p>Silahkan isi form di bawah ini untuk mendaftar kursus saxophone</p>
+        </header>
+
+        <form id="registrationForm" class="registration-form">
+            <!-- Informasi Pribadi -->
+            <section class="form-section">
+                <h2>Informasi Pribadi</h2>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                    <input type="text" id="nama" name="nama" required>
+                    <span class="error-message" data-error="nama"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal_lahir">Tanggal Lahir <span class="required">*</span></label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                    <span class="error-message" data-error="tanggal_lahir"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="jenis_kelamin">Jenis Kelamin <span class="required">*</span></label>
+                    <select id="jenis_kelamin" name="jenis_kelamin" required>
+                        <option value="">Pilih Jenis Kelamin</option>
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                    <span class="error-message" data-error="jenis_kelamin"></span>
+                </div>
+            </section>
+
+            <!-- Informasi Kontak -->
+            <section class="form-section">
+                <h2>Informasi Kontak</h2>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" data-error="email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon <span class="required">*</span></label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                    <span class="error-message" data-error="telepon"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap <span class="required">*</span></label>
+                    <textarea id="alamat" name="alamat" required></textarea>
+                    <span class="error-message" data-error="alamat"></span>
+                </div>
+            </section>
+
+            <!-- Informasi Kursus -->
+            <section class="form-section">
+                <h2>Informasi Kursus</h2>
+                <div class="form-group">
+                    <label for="level">Level Kursus <span class="required">*</span></label>
+                    <select id="level" name="level" required>
+                        <option value="">Pilih Level</option>
+                        <option value="pemula">Pemula</option>
+                        <option value="menengah">Menengah</option>
+                        <option value="lanjutan">Lanjutan</option>
+                    </select>
+                    <span class="error-message" data-error="level"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="jadwal">Jadwal Kursus <span class="required">*</span></label>
+                    <select id="jadwal" name="jadwal" required>
+                        <option value="">Pilih Jadwal</option>
+                        <option value="weekday-pagi">Weekday Pagi (09.00 - 11.00)</option>
+                        <option value="weekday-siang">Weekday Siang (13.00 - 15.00)</option>
+                        <option value="weekend-pagi">Weekend Pagi (09.00 - 11.00)</option>
+                        <option value="weekend-siang">Weekend Siang (13.00 - 15.00)</option>
+                    </select>
+                    <span class="error-message" data-error="jadwal"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="pengalaman">Pengalaman Musik</label>
+                    <textarea id="pengalaman" name="pengalaman" placeholder="Ceritakan pengalaman musik Anda (opsional)"></textarea>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-primary">Daftar Sekarang</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/pendaftaran.js"></script>
+</body>
+</html>
